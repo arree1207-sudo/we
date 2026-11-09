@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - AI ในงานเทคโนโลยีธุรกิจดิจิทัล</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { dark: '#0B0F19', card: '#161F33', accent: '#00F0FF', purple: '#7000FF', pink: '#FF007A' }
+                    },
+                    fontFamily: { sans: ['Sarabun', 'sans-serif'], heading: ['Kanit', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Sarabun', sans-serif; background-color: #0B0F19; color: #E2E8F0; }
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Kanit', sans-serif; }
+        .text-gradient { background: linear-gradient(135deg, #00F0FF 0%, #7000FF 50%, #FF007A 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-btn-active { background: linear-gradient(135deg, #00F0FF 0%, #7000FF 100%); color: #ffffff !important; box-shadow: 0 0 15px rgba(0, 240, 255, 0.4); }
+    </style>
+</head>
+<body class="bg-brand-dark min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/90 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-accent to-brand-purple flex items-center justify-center text-black font-bold text-xl shadow-lg">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <span class="font-heading font-bold text-xl text-white">DBT <span class="text-gradient">AI HUB</span></span>
+            </a>
+
+            <!-- เมนูหลัก 3 ปุ่มกด -->
+            <nav class="hidden md:flex items-center space-x-3 font-heading text-sm">
+                <a href="index.html" class="nav-btn-active px-5 py-2.5 rounded-full transition-all duration-300">
+                    <i class="fa-solid fa-house mr-1"></i> หน้าแรก
+                </a>
+                <a href="dev.html" class="text-slate-300 hover:text-brand-accent px-5 py-2.5 rounded-full border border-slate-700 hover:border-brand-accent transition-all duration-300">
+                    <i class="fa-solid fa-code mr-1"></i> AI & การพัฒนาคอมพิวเตอร์
+                </a>
+                <a href="digital-biz.html" class="text-slate-300 hover:text-brand-accent px-5 py-2.5 rounded-full border border-slate-700 hover:border-brand-accent transition-all duration-300">
+                    <i class="fa-solid fa-chart-line mr-1"></i> AI & เทคโนโลยีธุรกิจดิจิทัล
+                </a>
+            </nav>
+
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-brand-card border-b border-slate-800 p-4 space-y-3 font-heading">
+            <a href="index.html" class="block text-brand-accent py-2 font-bold">หน้าแรก</a>
+            <a href="dev.html" class="block text-slate-300 py-2">AI & การพัฒนาคอมพิวเตอร์</a>
+            <a href="digital-biz.html" class="block text-slate-300 py-2">AI & เทคโนโลยีธุรกิจดิจิทัล</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <section class="py-20 text-center relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 relative z-10">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-slate-800 text-brand-accent text-xs font-semibold mb-6 border border-slate-700">สาขาเทคโนโลยีธุรกิจดิจิทัล (Digital Business Technology)</span>
+                <h1 class="font-heading text-4xl sm:text-6xl font-extrabold text-white mb-6">
+                    การประยุกต์ใช้ <span class="text-gradient">AI ในโลกคอมพิวเตอร์</span> <br>และธุรกิจดิจิทัลยุคใหม่
+                </h1>
+                <p class="text-slate-400 text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+                    เจาะลึกบทบาทของ AI ในการเขียนโปรแกรม การดูแลระบบคอมพิวเตอร์ ฐานข้อมูล และการขับเคลื่อนนวัตกรรมธุรกิจดิจิทัล
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="dev.html" class="font-heading px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-accent to-brand-purple text-white font-semibold shadow-lg hover:scale-105 transition-all">
+                        AI งานคอมพิวเตอร์ <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="digital-biz.html" class="font-heading px-6 py-3.5 rounded-xl bg-brand-card border border-slate-700 text-white font-semibold hover:border-brand-accent hover:scale-105 transition-all">
+                        AI งานธุรกิจดิจิทัล <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Columns Showcase -->
+        <section class="py-16 bg-brand-dark/50 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-heading text-3xl font-bold text-white text-center mb-12">ทักษะสำคัญของสาขาในยุค AI</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Column 1 -->
+                    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 hover:border-brand-accent transition-all group">
+                        <div class="w-14 h-14 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">AI Coding & Software</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">ผู้ช่วยเขียนโปรแกรม เขียนโค้ด HTML, Web App และลดเวลาการพัฒนาซอฟต์แวร์</p>
+                        <a href="dev.html" class="text-brand-accent font-heading text-sm hover:underline">ดูรายละเอียด <i class="fa-solid fa-chevron-right text-xs ml-1"></i></a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 hover:border-brand-purple transition-all group">
+                        <div class="w-14 h-14 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">Database & Analytics</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">จัดการระบบฐานข้อมูล ประมวลผลข้อมูลขนาดใหญ่ และวิเคราะห์เพื่อการตัดสินใจ</p>
+                        <a href="dev.html" class="text-brand-purple font-heading text-sm hover:underline">ดูรายละเอียด <i class="fa-solid fa-chevron-right text-xs ml-1"></i></a>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="bg-brand-card rounded-2xl border border-slate-800 p-6 hover:border-brand-pink transition-all group">
+                        <div class="w-14 h-14 rounded-xl bg-brand-pink/10 text-brand-pink flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">Digital Commerce & Automation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">ระบบร้านค้าออนไลน์ แพลตฟอร์มไรเดอร์ และการตลาดอัตโนมัติด้วย AI</p>
+                        <a href="digital-biz.html" class="text-brand-pink font-heading text-sm hover:underline">ดูรายละเอียด <i class="fa-solid fa-chevron-right text-xs ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        &copy; 2026 สาขาเทคโนโลยีธุรกิจดิจิทัล - AI Applications Project.
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

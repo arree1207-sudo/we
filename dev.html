@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & การพัฒนาคอมพิวเตอร์ - DBT AI HUB</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { dark: '#0B0F19', card: '#161F33', accent: '#00F0FF', purple: '#7000FF', pink: '#FF007A' } },
+                    fontFamily: { sans: ['Sarabun', 'sans-serif'], heading: ['Kanit', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Sarabun', sans-serif; background-color: #0B0F19; color: #E2E8F0; }
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Kanit', sans-serif; }
+        .text-gradient { background: linear-gradient(135deg, #00F0FF 0%, #7000FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-btn-active { background: linear-gradient(135deg, #00F0FF 0%, #7000FF 100%); color: #ffffff !important; box-shadow: 0 0 15px rgba(0, 240, 255, 0.4); }
+    </style>
+</head>
+<body class="bg-brand-dark min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/90 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-accent to-brand-purple flex items-center justify-center text-black font-bold text-xl shadow-lg">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <span class="font-heading font-bold text-xl text-white">DBT <span class="text-gradient">AI HUB</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-3 font-heading text-sm">
+                <a href="index.html" class="text-slate-300 hover:text-brand-accent px-5 py-2.5 rounded-full border border-slate-700 hover:border-brand-accent transition-all duration-300">
+                    <i class="fa-solid fa-house mr-1"></i> หน้าแรก
+                </a>
+                <a href="dev.html" class="nav-btn-active px-5 py-2.5 rounded-full transition-all duration-300">
+                    <i class="fa-solid fa-code mr-1"></i> AI & การพัฒนาคอมพิวเตอร์
+                </a>
+                <a href="digital-biz.html" class="text-slate-300 hover:text-brand-accent px-5 py-2.5 rounded-full border border-slate-700 hover:border-brand-accent transition-all duration-300">
+                    <i class="fa-solid fa-chart-line mr-1"></i> AI & เทคโนโลยีธุรกิจดิจิทัล
+                </a>
+            </nav>
+
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-brand-card border-b border-slate-800 p-4 space-y-3 font-heading">
+            <a href="index.html" class="block text-slate-300 py-2">หน้าแรก</a>
+            <a href="dev.html" class="block text-brand-accent py-2 font-bold">AI & การพัฒนาคอมพิวเตอร์</a>
+            <a href="digital-biz.html" class="block text-slate-300 py-2">AI & เทคโนโลยีธุรกิจดิจิทัล</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent font-heading font-semibold text-sm">COMPUTER SCIENCE & PROGRAMMING</span>
+                <h1 class="font-heading text-4xl font-extrabold text-white mt-2 mb-4">AI ในการพัฒนาซอฟต์แวร์และระบบคอมพิวเตอร์</h1>
+                <p class="text-slate-400">เพิ่มประสิทธิภาพการเขียนโปรแกรม บำรุงรักษาระบบ และการจัดการฐานข้อมูล</p>
+            </div>
+
+            <!-- 3 Columns Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Code Generator" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-brand-accent text-2xl mb-2"><i class="fa-solid fa-terminal"></i></div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">AI Coding Assistants</h3>
+                        <p class="text-slate-400 text-sm">ช่วยโปรแกรมเมอร์สร้างโครงสร้างโค้ด HTML/CSS, PHP, SQL และช่วยตรวจหาข้อผิดพลาด (Debug) ได้อย่างรวดเร็ว</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Hardware Diagnostics" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-brand-accent text-2xl mb-2"><i class="fa-solid fa-gears"></i></div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">Predictive Maintenance</h3>
+                        <p class="text-slate-400 text-sm">การใช้ AI ตรวจสอบสถานะการทำงานของฮาร์ดแวร์ อุปกรณ์เครือข่าย และทำนายเวลาบำรุงรักษาก่อนอุปกรณ์ชำรุด</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Database Optimization" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-brand-accent text-2xl mb-2"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-2">Smart Database Optimization</h3>
+                        <p class="text-slate-400 text-sm">ปรับปรุงประสิทธิภาพระบบฐานข้อมูลอัตโนมัติ ช่วยเขียน Query ลดการค้างของระบบ และเสริมความปลอดภัยไซเบอร์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        &copy; 2026 สาขาเทคโนโลยีธุรกิจดิจิทัล - AI Applications Project.
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
